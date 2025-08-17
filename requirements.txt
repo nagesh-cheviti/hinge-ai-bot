@@ -1,0 +1,4 @@
+Appium-Python-Client
+google-generativeai
+selenium
+python-dotenv
