@@ -59,3 +59,31 @@ File Structure:
 Disclaimer:
 -----------
 This tool is for educational purposes only. Automated interaction on dating platforms may violate their terms of service. Use responsibly.
+
+
+OPTIONAL: CONNECT INSPECTOR TO EMULATOR:
+--------
+
+In Appium Inspector:
+
+- Remote Host: 127.0.0.1  
+- Port: 4723  
+- Path: /
+
+Set Desired Capabilities in the JSON Editor:
+
+```json
+{
+  "platformName": "Android",
+  "appium:deviceName": "emulator-5554",
+  "appium:appPackage": "co.hinge.app",
+  "appium:appActivity": "co.hinge.app.ui.AppActivity",
+  "appium:automationName": "UiAutomator2",
+  "appium:noReset": true,
+  "appium:dontStopAppOnReset": true,
+  "appium:fullReset": false,
+  "appium:skipDeviceInitialization": true,
+  "appium:skipServerInstallation": true,
+  "appium:newCommandTimeout": 600,
+  "appium:appWaitActivity": "*"
+}
